@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Money Master</title>
+	<!-- tailwindcss link  -->
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+       <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+	<section class="w-[85%] h-auto mx-auto ">
+		<div>
+			<img class=" w-auto h-auto m-5 mx-auto   " src="img/Money Master💰.png" alt="">
+		</div>
+         
+		<div class="flex justify-between ">
+			<div class=" w-[62%] ">
+				<img class="rounded-md w-[1020px] h-[610px]" src="img/banner.png" alt="">
+			</div>
+			<div class="bg-slate-100 rounded-md w-1/3">
+				<h1 class=" mt-6 my-2 font-bold text-2xl text-center mx-auto">Income</h1>
+				<div class="flex gap-5 mx-auto items-center justify-center ">
+					<label class="text-lg" for="income"> Income   :</label>
+					<input id="incomeId" class="p-1 px-2 rounded-md" type="number" placeholder="Your Income">
+				</div>
+				<h2 class="my-2 mt-5 font-bold text-2xl text-center mx-auto">Expenses</h2>
+				<div class="">
+                    <div class="flex gap-5 mx-auto items-center justify-center py-2 ">
+						<label class="text-lg" for="income"> Food   :</label>
+						<input id="food" class="p-1 px-2 rounded-md" type="number" placeholder="Your Income">
+					</div>
+                    <div class="flex gap-5 mx-auto items-center justify-center py-2  ">
+						<label class="text-lg" for="income"> Rent   :</label>
+						<input id="rent" class="p-1 px-2 rounded-md" type="number" placeholder="Your Income">
+					</div>
+                    <div class="flex gap-5 mx-auto items-center justify-center py-2 ">
+						<label class="text-lg" for="income"> Cloth  :</label>
+						<input id="cloth" class="p-1 px-2 rounded-md" type="number" placeholder="Your Income">
+					</div>
+				</div>
+				<div class="my-4 text-center">
+					<button class=" btn bg-teal-400" onclick="calculatorBalanceAndExpense()">CALCULATOR</button>
+				</div>
+				<div>
+					<h2 class="my-1 mt-5 font-bold text-xl text-center mx-auto">Total Expenses  : <span id="totalExpensesValue">0</span></h2>
+				</div>
+				<div>
+					<h2 class="m-1 font-bold text-xl text-center mx-auto">Balance  : <span id="balance">0</span></h2>
+				</div>
+				<div class="flex items-center mx-auto justify-evenly">
+					<span class="text-xl">Save  :</span>
+					<input id="saveMoney" class="w-[30%] p-1" type="number">
+					<p class="text-xl">%</p>
+					<button class="btn bg-teal-400 text-lg" onclick="saveManeyCalculator()">SAVE</button>
+				</div>
+				<div>
+					<div>
+						<h2 class="m-1 mt-4 font-bold text-xl text-center mx-auto">Saving Amount  : <span id="save-tk">0</span></h2>
+					</div>
+
+				<div>
+					<h2 class="m-1 font-bold text-xl text-center mx-auto">Remaining Balance  : <span id="lastremaining-balance">0</span></h2>
+				</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	
+	
+	<script src="app.js"></script>
+</body>
+</html>
